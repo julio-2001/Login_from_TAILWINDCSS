@@ -9,9 +9,8 @@
 </head>
 <body class="bg-black">
 
-    <header class="bg-red-900 flex h-">
-        <div class=" ">
-
+    <header class=" flex">
+        <div>
             <img src="src/assets/img/logo.svg" alt="logo camp in" class="m-6 flex relative right-2" >
 
             <div class=" left-3"> 
@@ -29,15 +28,57 @@
         </div>
     </header>
 
-    <main>
+    <main >
+        <form action="#" method="post" onsubmit="formulario(event)">
 
-        <form action="#" method="post" >
+            <label for="inputEmail" class="text-base text-white relative left-6 mx-auto top-7   ">E-mail</label>
+            <div class=" h-14 w-11/12  m-auto flex border border- outline-none relative  top-8 rounded ">
 
+                <img src="src/assets/img/icone_email.svg" alt="icone email" 
+                class="w-6 m-2">
+
+                <input name="inputEmail" id="inputEmail" type="email" placeholder="Digite seu e-mail" required maxlength="35" tabindex="1"
+                class=" flex w-full bg-transparent outline-none text-white">
+                
+            </div>
+
+
+            <label for="inputSenha" class="text-white flex  translate-x-6 translate-y-20 w-4/5" >Senha</label>
+            <div class="top-20  h-14 w-11/12  m-auto relative  flex border rounded">
+
+                <img src="src/assets/img/icone_senha.svg" alt="icone de cadeado" 
+                class="w-6 m-2"  >
+
+                <input name="inputSenha" id="inputSenha" type="password" placeholder="Digite sua senha" required minlength="8" maxlength="20"  
+                class="w-11/12 bg-transparent  text-white outline-none  " autocomplete="current-password" tabindex="1">
+
+                <img onclick="revelaSenha(event)" src="src/assets/img/icone_olho.svg" alt="icone de olho" 
+                class="w-6 relative m-auto right-3 ">
+
+            </div>
+
+            <div class="relative top-24 h-8 w-11/12 m-auto "  >
+
+                <input  type="checkbox" 
+                class="m-1 relative top-1.5 ">
+
+                <label for="lembrar" class="text-gray-500 relative top-1 ">Lembre-me</label>
+                
+                <a href="#" class="flex justify-end -translate-y-5  text-yellow-400 " >Esqueci minha senha</a>
+
+            </div>
+            
+
+            <button class=" relative top-28 border flex justify-center p-3 m-auto w-11/12 h-14  text-balck bg-yellow-500 border-none size text-lg font-semibold rounded">Entrar</button>
+
+            <div class="relative top-32 w-11/12 m-auto flex justify-center" >
+
+                <p class="text-yellow-100">Não tem uma conta? <a href="#" class="text-yellow-400">Registre-se</a></p>
+
+            </div>
 
 
         </form>
     </main>
-
-
 </body>
 </html>
